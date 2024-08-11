@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixelate Image</title>
+    <style>
+        #canvas {
+            display: block;
+            max-width: 100%;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            display: inline-block;
+        }
+        .kolor {
+            display: inline-block;
+            width: 50px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pixelate Image</h1>
+    <input type="range" id="pixelSizeSlider" min="1" max="100" value="12">
+    <label for="pixelSizeSlider">Pixel Size: <span id="pixelSizeValue">12</span></label>
+    <br><br>
+    <div id="dominantColorsDiv"></div>
+    <div style="display: flex;">
+        <canvas id="canvas"></canvas>
+        <div id="quadro"></div>
+        <div id="quadro2"></div>
+
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.7.2/dist/axios.min.js"></script>
+    <script src="index2.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
